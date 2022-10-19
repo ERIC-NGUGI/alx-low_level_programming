@@ -1,14 +1,16 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main- Prints all possible combination of single-digit
+ * main - Entry point
  *
- * Return: 0
+ * A program that prints _putchar
+ * followed by a new line.
+ *
+ * Return: Always 0
  */
-#include "main.h"
 int main(void)
-{
-	putchar('_');
+{       putchar('_');
 	putchar('p');
 	putchar('u');
 	putchar('t');
