@@ -13,7 +13,7 @@ void print_square(int size)
 	{
 		for (hashH = 0; hashH < size; hashH++)
 		{
-			for (hashW = 0; hashW < hashH; hashW++)
+			for (hashW = 0; hashW < size; hashW++)
 				_putchar('#');
 			if (hashH == size - 1)
 				continue;
