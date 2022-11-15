@@ -15,11 +15,14 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			multiple = multiple * atoi(argv[i]);
-		}
-		printf("%d\n", multiple);
+		printf ("Error\n");
+		return (1);
 	}
+	for (i = 1; i < argc; i++)
+	{
+		multiple = multiple * atoi(argv[i]);
+	}
+	printf("%d\n", multiple);
+
 	return (0);
 }
