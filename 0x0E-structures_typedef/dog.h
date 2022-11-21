@@ -10,13 +10,15 @@
 * Description: Defines metadata about the dog and type of dogs
 */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	char *owner;
 	float age;
-};
+} dog_t;
 
+/* function prototypes*/
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 
 #endif
