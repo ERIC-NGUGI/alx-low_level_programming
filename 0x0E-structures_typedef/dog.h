@@ -17,6 +17,6 @@ struct dog
 	float age;
 };
 
-/* function prototypes*:/
+
 
 #endif
