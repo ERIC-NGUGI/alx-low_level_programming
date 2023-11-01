@@ -4,7 +4,7 @@
  * _puts_recursion - print a string with recursion
  * @s - string that we need to print.
  *
- * Return: no return
+ * Return: Always 0 (success)
  */
 
 void _puts_recursion(char *s)
@@ -12,9 +12,9 @@ void _puts_recursion(char *s)
 	if (*s != '\0')
 	{
 		putchar(s[0]);
-		_puts_recursion(s+1);
+		_puts_recursion(s + 1);
 	}
-	else 
+	else
 	{
 		putchar('\n');
 	}
