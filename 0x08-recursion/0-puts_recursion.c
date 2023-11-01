@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * _puts_recursion - print a string with recursion
+ * _puts_recursion - function like puts()
  * @s - string that we need to print.
  *
  * Return: Always 0 (success)
