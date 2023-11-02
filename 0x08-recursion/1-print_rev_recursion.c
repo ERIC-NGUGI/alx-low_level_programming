@@ -4,9 +4,8 @@
 /*
  * _print_rev_recursion - a function that prints a string in reverse.
  *
- * @s - input
+ * @s - The string to be printed
  *
- * Return: Always 0.
  */
 
 void _print_rev_recursion(char *s)
