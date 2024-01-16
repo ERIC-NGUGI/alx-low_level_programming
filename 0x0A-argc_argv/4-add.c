@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-	int num, i, addition = 1;
+	int num, i, addition = 0;
 
 	if (argc < 3)
 	{
@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		char *endptr;
+
 		num = strtol(argv[i], &endptr, 10);
 
 		if (*endptr != '\0' && *endptr != '\n')
@@ -23,7 +24,6 @@ int main(int argc, char *argv[])
 		}
 	addition += num;
 	}
-	
 
 	printf("%d\n", addition);
 
