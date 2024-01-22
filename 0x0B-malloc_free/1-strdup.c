@@ -24,13 +24,13 @@ char *_strdup(char *str)
 
 	len = strlen(str);
 
-	duplicate =(char *)malloc((len + 1) * sizeof(char));
+	duplicate = (char *)malloc((len + 1) * sizeof(char));
 	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
 	strcpy(duplicate, str);
 
-	return duplicate;
+	return (duplicate);
 
 }
