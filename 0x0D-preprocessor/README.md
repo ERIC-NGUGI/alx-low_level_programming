@@ -1,0 +1,1 @@
+This is a project about the preprocessor.The preprocessor scans the source code for preprocessor directives (lines starting with #) and performs tasks such as including header files (#include), macro substitution, and conditional compilation (#ifdef, #ifndef, #if, #else, #endif).
