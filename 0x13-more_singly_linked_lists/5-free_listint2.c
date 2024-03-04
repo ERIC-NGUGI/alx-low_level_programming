@@ -7,27 +7,27 @@
  */
 void free_listint2(listint_t **head)
 {
-    listint_t *current, *next;
+	listint_t *current, *next;
 
     /* Check if head pointer is NULL */
-    if (head == NULL)
-        return;
+	if (head == NULL)
+		return;
 
     /* Iterate through the list */
-    current = *head;
-    while (current != NULL)
-    {
-        /* Store the next node */
-        next = current->next;
+	current = *head;
+	while (current != NULL)
+	{
+		/* Store the next node */
+		next = current->next;
 
-        /* Free the current node */
-        free(current);
+		/* Free the current node */
+		free(current);
 
-        /* Move to the next node */
-        current = next;
-    }
+		/* Move to the next node */
+		current = next;
+	}
 
     /* Set the head pointer to NULL */
-    *head = NULL;
+	*head = NULL;
 }
 

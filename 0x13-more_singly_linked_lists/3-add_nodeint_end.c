@@ -9,32 +9,32 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-    listint_t *new_node, *temp;
+	listint_t *new_node, *temp;
 
     /* Allocate memory for the new node */
-    new_node = malloc(sizeof(listint_t));
-    if (new_node == NULL)
-        return NULL;
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+		return (NULL);
 
     /* Initialize the new node */
-    new_node->n = n;
-    new_node->next = NULL;
+	new_node->n = n;
+	new_node->next = NULL;
 
     /* If the list is empty, set the new node as the head */
-    if (*head == NULL)
-    {
-        *head = new_node;
-        return new_node;
-    }
+	if (*head == NULL)
+	{
+		*head = new_node;
+		return (new_node);
+	}
 
     /* Otherwise, traverse the list to find the last node */
-    temp = *head;
-    while (temp->next != NULL)
-        temp = temp->next;
+	temp = *head;
+
+	while (temp->next != NULL)
+		temp = temp->next;
 
     /* Add the new node to the end of the list */
-    temp->next = new_node;
-
-    return new_node;
+	temp->next = new_node;
+	return (new_node);
 }
 
